@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/x-icon" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./src/reset.css" />
     <link rel="stylesheet" href="./src/global.css" />
     <link rel="stylesheet" href="./src/styles.css" />
-
-    <link rel="icon" href="./assets/icons/favicon.png" type="image/x-icon" />
 
     <title>One Piece - Dev em dobro</title>
   </head>
 
   <body>
     <main class="personagens">
+      
       <div class="personagem">
         <img
           class="imagem"
           src="./assets/images/personagem-tony-chopper.png"
           alt="Personagem Tony Chopper"
         />
+
         <div class="conteudo">
           <img
             class="logo"
@@ -58,7 +64,7 @@
         </div>
       </div>
 
-      <div class="personagem">
+      <div class="personagem selecionado">
         <img
           class="imagem"
           src="./assets/images/personagem-monkey-d-luffy.png"
@@ -135,24 +141,28 @@
           />
         </button>
       </li>
+
       <li>
         <button class="botao">
           <img src="./assets/icons/tripulacao-zoro.png" alt="Tripulação Zoro" />
         </button>
       </li>
+
       <li>
-        <button class="botao">
+        <button class="botao selecionado">
           <img
             src="./assets/icons/tripulacao-luffy.png"
             alt="Tripulação Luffy"
           />
         </button>
       </li>
+
       <li>
         <button class="botao">
           <img src="./assets/icons/tripulacao-nami.png" alt="Tripulação Nami" />
         </button>
       </li>
+
       <li>
         <button class="botao">
           <img
@@ -162,5 +172,7 @@
         </button>
       </li>
     </ul>
+
+    <script src="./src/script.js"></script>
   </body>
 </html>
