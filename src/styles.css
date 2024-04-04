@@ -25,6 +25,10 @@ main .personagem .imagem {
   object-fit: cover;
 }
 
+.logo {
+  margin-bottom: 6px;
+}
+
 .conteudo {
   display: flex;
   flex-direction: column;
@@ -33,7 +37,7 @@ main .personagem .imagem {
   left: 120px;
   justify-content: center;
   min-height: 100vh;
-  max-width: 380px;
+  max-width: 480px;
   z-index: 1;
 }
 
@@ -49,6 +53,7 @@ main .personagem .imagem {
   color: #ffffff;
   font-family: "Rubik";
   line-height: 24px;
+  text-align: justify;
 }
 
 .botoes {
@@ -63,21 +68,27 @@ main .personagem .imagem {
   align-items: center;
   gap: 10px;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.15s;
+}
+
+.botoes :hover{
+transform: scale(1.05);
 }
 
 .botoes .botao {
   border: none;
-  background: #000000;
   cursor: pointer;
+  background-color: rgba(0, 0, 0);
   border-radius: 50%;
 }
 
 .botoes .botao img {
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .botoes .botao.selecionado {
-  transform: scale(1.2);
+  transform: scale(1.15);
   box-shadow: 0 0 10px #d9d9d9;
 }
 
@@ -124,9 +135,9 @@ main .personagem .imagem {
     height: auto;
   }
 
-  .conteudo .logo {
+  .logo {
     width: 170px;
-    height: 75px;
+    margin-bottom: 16px;
   }
 
   .conteudo {
@@ -145,15 +156,4 @@ main .personagem .imagem {
   .botoes .botao img {
     max-width: 50px;
   }
-}
-
-
-/* Versão Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-/* Versão Mobile */
-@media (min-width: 0px) and (max-width: 767px) {
-
 }
